@@ -66,7 +66,9 @@ input{font-family:Poppins,system-ui,sans-serif}
 <div style="position:absolute;bottom:-220px;left:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(231,97,0,.28),transparent 68%);filter:blur(20px);pointer-events:none"></div>
 <div style="position:absolute;top:44%;left:-70px;width:190px;height:190px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.13);pointer-events:none"></div>
 
-<div data-r="hero" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:start">
+<a href="#top" data-r="banner" style="position:relative;z-index:1;display:block;max-width:1180px;margin:0 auto 40px"><img src="assets/free-aeo-geo-banner.png" alt="Get your free AEO/GEO audit — understand your AI search visibility" style="width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 18px 44px -22px rgba(0,0,0,.55)"></a>
+
+<div data-r="hero" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:stretch">
 
 <div>
 <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border:1px solid rgba(231,97,0,.6);background:rgba(231,97,0,.12);border-radius:100px;font-size:11.5px;font-weight:500;letter-spacing:1.4px;color:#f9c43d;white-space:nowrap"><span style="white-space:nowrap">AEO/GEO AUDIT · Report in 2 Business Days&nbsp;</span></div>
@@ -83,7 +85,7 @@ input{font-family:Poppins,system-ui,sans-serif}
 <div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color:#f9c43d;font-size:15px">✓</span>Your AI visibility score</div>
 <div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>Who AI cites instead of you</div>
 <div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>How models describe your brand&nbsp;</div><div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>Your priority fixes&nbsp;</div>
-</div></div><div><div style="position: relative; background: #fff; border-radius: 18px; padding: 32px; box-shadow: 0 40px 90px -28px rgba(0,0,0,.62),0 0 0 1px rgba(255,255,255,.08); color: #1f2734; width: 553px; height: 440px">
+</div></div><div style="display:flex;flex-direction:column;height:100%"><div style="flex:1;display:flex;align-items:center"><div style="position: relative; background: #fff; border-radius: 18px; padding: 32px; box-shadow: 0 40px 90px -28px rgba(0,0,0,.62),0 0 0 1px rgba(255,255,255,.08); color: #1f2734; width: 553px; height: 440px">
 
 
 <sc-if value="{{ isIdle }}" hint-placeholder-val="{{ true }}">
@@ -112,7 +114,7 @@ input{font-family:Poppins,system-ui,sans-serif}
 </div>
 <div style="margin-top:20px">
 <div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-size:19px;font-weight:600;letter-spacing:-.5px">Where should we send it?</div><div style="font-size:11px;font-weight:500;color:rgba(31,39,52,.4);letter-spacing:.8px">2 / 2</div></div>
-<p style="font-size:13.5px;color:rgba(31,39,52,.6);font-weight:300;margin:6px 0 16px">Your report arrives within {{ turnaround }} hours, written by the analyst who ran it.</p>
+<p style="font-size:13.5px;color:rgba(31,39,52,.6);font-weight:300;margin:6px 0 16px">Your report arrives within 2 business days, written by the analyst who ran it.</p>
 <div data-r="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
 <input placeholder="Full name" style="box-sizing:border-box;width:100%;padding:13px 14px;border:1.5px solid rgba(31,39,52,.18);border-radius:9px;font-size:14px;outline:none" style-focus="border-color:#e76100">
 <input placeholder="Work email" style="box-sizing:border-box;width:100%;padding:13px 14px;border:1.5px solid rgba(31,39,52,.18);border-radius:9px;font-size:14px;outline:none" style-focus="border-color:#e76100">
@@ -141,7 +143,7 @@ input{font-family:Poppins,system-ui,sans-serif}
 </div>
 </sc-if>
 
-</div>
+</div></div>
 <div data-r="stats" style="margin-top: 22px; padding: 22px 26px; border: 1px solid rgba(255,255,255,.14); border-radius: 16px; background: rgba(255,255,255,.05); display: flex; flex-wrap: wrap; gap: 26px 40px; width: 559px; height: 94px">
 
 <div><div style="font-size:30px;font-weight:600;letter-spacing:-1px">200+</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;margin-top:2px">Brands already tracking AI&nbsp;<br>visibility on Tesseract</div></div><div><div style="font-size:30px;font-weight:600;letter-spacing:-1px">50m+</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;margin-top:2px">AI search <br>queries analysed</div></div>
@@ -150,13 +152,34 @@ input{font-family:Poppins,system-ui,sans-serif}
 
 </div></div>
 
-<div id="proof" data-r="pad" style="border-bottom:1px solid rgba(31,39,52,.1);padding:26px 40px;background:linear-gradient(#fff,#fbfaf8)">
-<div data-r="proofrow" style="max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:36px">
-<div style="flex:0 0 auto;font-size:11px;letter-spacing:1.4px;font-weight:500;color:rgba(31,39,52,.45)">TRUSTED BY</div>
-<div data-r="logos" style="flex:1;display:flex;gap:14px;align-items:center">
-<sc-for list="{{ clients }}" as="c" hint-placeholder-count="6">
-<div style="flex:1;height:34px;border-radius:6px;background:repeating-linear-gradient(45deg,rgba(31,39,52,.05) 0 5px,transparent 5px 10px);display:flex;align-items:center;justify-content:center;font-size:11px;font-family:ui-monospace,Menlo,monospace;color:rgba(31,39,52,.45)">{{ c }}</div>
-</sc-for>
+<div id="proof" data-r="pad" style="border-bottom:1px solid rgba(31,39,52,.1);padding:30px 0;background:linear-gradient(#fff,#fbfaf8);overflow:hidden">
+<div style="max-width:1180px;margin:0 auto 18px;padding:0 40px;font-size:11px;letter-spacing:1.4px;font-weight:500;color:rgba(31,39,52,.45)">TRUSTED BY</div>
+<div style="position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)">
+<div style="display:flex;width:max-content;animation:marq 45s linear infinite">
+<div style="display:flex;align-items:center;gap:64px;padding-right:64px">
+<img src="assets/logos/marcus.png" alt="Marcus by Goldman Sachs" style="height:30px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/mercer.png" alt="Mercer" style="height:26px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/schneider-electric.png" alt="Schneider Electric" style="height:34px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/airbnb.png" alt="Airbnb" style="height:30px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/blackstone.png" alt="Blackstone" style="height:26px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/bausch-lomb.png" alt="Bausch + Lomb" style="height:26px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/emirates-nbd.webp" alt="Emirates NBD" style="height:40px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/national-debt-relief.png" alt="National Debt Relief" style="height:46px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/grand-canyon.png" alt="Grand Canyon University" style="height:44px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/guardian-protection.png" alt="Guardian Protection" style="height:40px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+</div>
+<div style="display:flex;align-items:center;gap:64px;padding-right:64px" aria-hidden="true">
+<img src="assets/logos/marcus.png" alt="" style="height:30px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/mercer.png" alt="" style="height:26px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/schneider-electric.png" alt="" style="height:34px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/airbnb.png" alt="" style="height:30px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/blackstone.png" alt="" style="height:26px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/bausch-lomb.png" alt="" style="height:26px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/emirates-nbd.webp" alt="" style="height:40px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/national-debt-relief.png" alt="" style="height:46px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/grand-canyon.png" alt="" style="height:44px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+<img src="assets/logos/guardian-protection.png" alt="" style="height:40px;width:auto;flex:0 0 auto;object-fit:contain;opacity:.88">
+</div>
 </div>
 </div>
 </div>
@@ -183,7 +206,7 @@ input{font-family:Poppins,system-ui,sans-serif}
 <div style="position:relative;font-size:17.5px;font-weight:600;letter-spacing:-.4px;margin:14px 0 9px;line-height:1.3">{{ c.title }}</div>
 <div style="position:relative;font-size:13.5px;line-height:1.6;font-weight:300;color:{{ c.bodyColor }}">{{ c.body }}</div>
 <sc-if value="{{ c.open }}" hint-placeholder-val="{{ false }}">
-<div style="position:relative;margin-top:16px;padding:12px 14px;border-radius:10px;background:rgba(231,97,0,.14);border:1px solid rgba(231,97,0,.45);font-size:12.5px;font-weight:500;color:#f9c43d;animation:fadeUp .28s ease both">{{ c.out }}</div>
+<div style="position:relative;margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.16);font-size:12.5px;font-weight:400;font-style:italic;color:rgba(255,255,255,.72);animation:fadeUp .28s ease both">{{ c.out }}</div>
 </sc-if>
 </div>
 </sc-for>
