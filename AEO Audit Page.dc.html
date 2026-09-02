@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><style>
+body{margin:0;background:#fff;font-family:Poppins,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#e76100;text-decoration:none}a:hover{color:#f9c43d}
+input{font-family:Poppins,system-ui,sans-serif}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes marq{to{transform:translateX(-50%)}}
+[data-r="grid5"]{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+[data-r="grid5"]>*{grid-column:span 2}
+[data-r="grid5"]>*:nth-child(4){grid-column:2/span 2}
+@media (max-width:1000px){[data-r="grid5"]{grid-template-columns:repeat(4,1fr)}[data-r="grid5"]>*:nth-child(4){grid-column:span 2}}
+@media (max-width:680px){[data-r="grid5"]{grid-template-columns:1fr}[data-r="grid5"]>*,[data-r="grid5"]>*:nth-child(4){grid-column:span 1}}
+@media (max-width:860px){[data-r="nav"] a{display:none!important}}
+@media (max-width:1000px){
+[data-r="hero"]{grid-template-columns:1fr!important;gap:36px!important}
+[data-r="stats"]{position:static!important;left:auto!important;top:auto!important;width:auto!important}
+[data-r="grid3"]{grid-template-columns:1fr 1fr!important}
+[data-r="h1"]{font-size:44px!important;letter-spacing:-1.4px!important}
+[data-r="free"]{font-size:64px!important;letter-spacing:-3px!important}
+}
+@media (max-width:680px){
+[data-r="pad"]{padding-left:20px!important;padding-right:20px!important}
+[data-r="grid3"],[data-r="grid2"]{grid-template-columns:1fr!important}
+[data-r="h1"]{font-size:34px!important}
+[data-r="free"]{font-size:52px!important;letter-spacing:-2px!important}
+[data-r="stats"]{gap:24px!important}
+[data-r="nav"]{display:none!important}
+[data-r="logos"]{flex-wrap:wrap!important;gap:10px!important}
+[data-r="logos"]>div{flex:0 0 30%!important}
+[data-r="proofrow"]{flex-direction:column!important;align-items:flex-start!important;gap:14px!important}
+}
+</style></helmet>
+
+<div data-r="pad" style="background:#e76100;color:#fff;padding:11px 40px">
+<div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;font-size:13.5px;font-weight:500;letter-spacing:.2px">
+
+<span>A full AEO/GEO audit, at no cost. No card, no contract.</span>
+</div>
+</div>
+
+<div style="background:#1f2734">
+<div data-r="pad" style="max-width:1180px;margin:0 auto;padding:20px 40px;display:flex;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:baseline;gap:2px;color:#fff;font-weight:700;font-size:26px;letter-spacing:-.5px">AdL<span style="color:#e76100">i</span>ft</div>
+<div data-r="nav" style="display:flex;align-items:center;gap:28px;color:rgba(255,255,255,.7);font-size:13.5px;font-weight:400">
+<a href="#covers" style="color:rgba(255,255,255,.7);white-space:nowrap">What's included</a>
+<a href="#proof" style="color:rgba(255,255,255,.7);white-space:nowrap">Result&nbsp;</a>
+<div style="padding:8px 16px;border:1px solid rgba(255,255,255,.28);border-radius:100px;color:#fff;font-size:12.5px;white-space:nowrap">Powered by Tesseract</div>
+</div>
+</div>
+</div>
+
+<div style="background:#1f2734;background-image:radial-gradient(1100px 460px at 78% -8%,rgba(231,97,0,.3),transparent 62%),radial-gradient(760px 420px at 8% 108%,rgba(249,196,61,.13),transparent 60%);color:#fff;padding:56px 40px 66px;position:relative;overflow:hidden" data-r="pad">
+<div style="position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(rgba(255,255,255,.16) 1.2px,transparent 1.2px); background-size: 22px 22px; opacity: .5; top: -2px; left: -1px"></div>
+<div style="position:absolute;top:-190px;right:-140px;width:520px;height:520px;border-radius:50%;border:1.5px solid rgba(255,255,255,.09);pointer-events:none"></div>
+<div style="position:absolute;top:-120px;right:-70px;width:380px;height:380px;border-radius:50%;border:1.5px solid rgba(231,97,0,.28);pointer-events:none"></div>
+<div style="position:absolute;bottom:-220px;left:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(231,97,0,.28),transparent 68%);filter:blur(20px);pointer-events:none"></div>
+<div style="position:absolute;top:44%;left:-70px;width:190px;height:190px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.13);pointer-events:none"></div>
+
+<div data-r="hero" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:start">
+
+<div>
+<div style="display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border:1px solid rgba(231,97,0,.6);background:rgba(231,97,0,.12);border-radius:100px;font-size:11.5px;font-weight:500;letter-spacing:1.4px;color:#f9c43d;white-space:nowrap"><span style="white-space:nowrap">AEO/GEO AUDIT · Report in 2 Business Days&nbsp;</span></div>
+<h1 data-r="h1" style="font-size:60px;line-height:1.04;font-weight:600;letter-spacing:-2px;margin:22px 0 0;text-wrap:balance"><span data-r="free" style="display: block; font-size: 88px; font-weight: 700; letter-spacing: -4px; color: rgb(231, 97, 0); line-height: 0.92;">Free.</span>Find out if AI recommends you — or your competitor.</h1>
+<div style="display:flex;align-items:center;gap:14px;margin-top:18px;flex-wrap:wrap">
+<span style="font-size:22px;font-weight:600;color:#f9c43d;letter-spacing:-.6px"><br></span>
+<div style="width:1px;height:22px;background:rgba(255,255,255,.18)"></div>
+<div style="font-size:13.5px;color:rgba(255,255,255,.7);font-weight:300">No card. No contract. No obligation</div>
+</div>
+<p style="font-size:17.5px;line-height:1.6;color:rgba(255,255,255,.72);font-weight:300;margin:22px 0 0;max-width:520px">ChatGPT, Gemini, Perplexity, Claude, DeepSeek and Google's own AI Overviews and AI Mode are answering the questions your buyers used to type into a search bar. We measure how often those answers name you, who they name instead, and what it takes to change that.</p>
+
+
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:30px">
+<div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color:#f9c43d;font-size:15px">✓</span>Your AI visibility score</div>
+<div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>Who AI cites instead of you</div>
+<div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>How models describe your brand&nbsp;</div><div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>Your priority fixes&nbsp;</div>
+</div></div><div><div style="position: relative; background: #fff; border-radius: 18px; padding: 32px; box-shadow: 0 40px 90px -28px rgba(0,0,0,.62),0 0 0 1px rgba(255,255,255,.08); color: #1f2734; width: 553px; height: 440px">
+
+
+<sc-if value="{{ isIdle }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-size:23px;font-weight:600;letter-spacing:-.6px;line-height:1.25">See how AI answers describe your brand</div><div style="font-size:11px;font-weight:500;color:rgba(31,39,52,.4);letter-spacing:.8px">1 / 2</div></div>
+<p style="font-size:14px;line-height:1.55;color:rgba(31,39,52,.62);font-weight:300;margin:9px 0 22px">Give us the domain. Our analysts do the rest and email you the report — no tools to learn, nothing to install.</p>
+<div style="font-size:11.5px;font-weight:500;letter-spacing:1px;color:rgba(31,39,52,.5);margin-bottom:8px">YOUR WEBSITE</div>
+<input value="{{ domainValue }}" onChange="{{ onDomain }}" placeholder="yourbrand.com" style="width:100%;box-sizing:border-box;padding:15px 16px;border:1.5px solid rgba(31,39,52,.18);border-radius:9px;font-size:15px;color:#1f2734;outline:none" style-focus="border-color:#e76100">
+<div onClick="{{ startScan }}" style="margin-top:12px;background:#e76100;color:#fff;border-radius:9px;padding:16px;text-align:center;font-size:15.5px;font-weight:500;cursor:pointer;user-select:none" style-hover="background:#cf5600">Continue →</div>
+<div style="display:flex;align-items:center;gap:8px;justify-content:center;margin-top:14px;font-size:12px;color:rgba(31,39,52,.5);font-weight:300">Two steps. Three more fields. Done in 20 seconds.</div>
+<div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(31,39,52,.1);display:flex;gap:12px;align-items:center">
+<div style="flex:0 0 auto;width:38px;height:38px;border-radius:50%;background:#fff3e9;color:#e76100;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600">T</div>
+<div style="font-size:12.5px;line-height:1.5;color:rgba(31,39,52,.62);font-weight:300">Audits run on <b style="font-weight:600;color:#1f2734">Tesseract</b>, our AI-visibility engine — 200+ category prompts, then read by a human analyst.</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isScore }}" hint-placeholder-val="{{ false }}">
+<div style="animation:fadeUp .45s ease both">
+<div style="border:1.5px solid rgba(231,97,0,.3);border-radius:12px;padding:15px 16px;background:#fffaf6">
+<div style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:#1f2734"><span style="color:#e76100">✓</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ domain }}</span><span style="font-weight:300;color:rgba(31,39,52,.55)">queued for audit</span></div>
+<div style="font-size:12.5px;line-height:1.55;color:rgba(31,39,52,.62);font-weight:300;margin-top:8px">Questions we'll put to the answer engines on your behalf:</div>
+<div style="display:flex;flex-direction:column;gap:6px;margin-top:10px;font-size:12.5px;color:#1f2734;font-weight:400">
+<div>“Best <i style="font-weight:300;color:rgba(31,39,52,.6)">[your category]</i> brand in India?”</div>
+<div>“Which <i style="font-weight:300;color:rgba(31,39,52,.6)">[your category]</i> company should I trust?”</div>
+<div style="color:rgba(31,39,52,.55);font-weight:300">…and 200 more, tailored to your category.</div>
+</div>
+</div>
+<div style="margin-top:20px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-size:19px;font-weight:600;letter-spacing:-.5px">Where should we send it?</div><div style="font-size:11px;font-weight:500;color:rgba(31,39,52,.4);letter-spacing:.8px">2 / 2</div></div>
+<p style="font-size:13.5px;color:rgba(31,39,52,.6);font-weight:300;margin:6px 0 16px">Your report arrives within {{ turnaround }} hours, written by the analyst who ran it.</p>
+<div data-r="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<input placeholder="Full name" style="box-sizing:border-box;width:100%;padding:13px 14px;border:1.5px solid rgba(31,39,52,.18);border-radius:9px;font-size:14px;outline:none" style-focus="border-color:#e76100">
+<input placeholder="Work email" style="box-sizing:border-box;width:100%;padding:13px 14px;border:1.5px solid rgba(31,39,52,.18);border-radius:9px;font-size:14px;outline:none" style-focus="border-color:#e76100">
+<input placeholder="Company" style="box-sizing:border-box;width:100%;padding:13px 14px;border:1.5px solid rgba(31,39,52,.18);border-radius:9px;font-size:14px;outline:none" style-focus="border-color:#e76100">
+<input placeholder="Phone" style="box-sizing:border-box;width:100%;padding:13px 14px;border:1.5px solid rgba(31,39,52,.18);border-radius:9px;font-size:14px;outline:none" style-focus="border-color:#e76100">
+
+</div>
+<div onClick="{{ submit }}" style="margin-top:12px;background:#e76100;color:#fff;border-radius:9px;padding:16px;text-align:center;font-size:15.5px;font-weight:500;cursor:pointer;user-select:none" style-hover="background:#cf5600">Send my&nbsp; audit →</div>
+
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}">
+<div style="animation:fadeUp .45s ease both">
+<div style="width:46px;height:46px;border-radius:50%;background:#fff3e9;color:#e76100;display:flex;align-items:center;justify-content:center;font-size:21px">✓</div>
+<div style="font-size:25px;font-weight:600;letter-spacing:-.8px;line-height:1.25;margin:18px 0 8px">Your audit is queued.</div>
+<p style="font-size:14.5px;line-height:1.6;color:rgba(31,39,52,.65);font-weight:300;margin:0">An analyst runs it, not a bot. The report for {{ domain }} lands in your inbox within 2 business days</p>
+<div style="margin-top:24px;display:flex;flex-direction:column;gap:0;border:1.5px solid rgba(31,39,52,.12);border-radius:12px;overflow:hidden">
+<div style="display:flex;gap:13px;padding:14px 16px;border-bottom:1px solid rgba(31,39,52,.1)"><span style="color:#e76100;font-weight:600;font-size:13px">01</span><span style="font-size:13.5px;font-weight:300;color:#1f2734">Tesseract scans 200+ prompts in your category</span></div>
+<div style="display:flex;gap:13px;padding:14px 16px;border-bottom:1px solid rgba(31,39,52,.1)"><span style="color:#e76100;font-weight:600;font-size:13px">02</span><span style="font-size:13.5px;font-weight:300;color:#1f2734">An analyst reviews the gaps and writes your roadmap</span></div>
+<div style="display:flex;gap:13px;padding:14px 16px"><span style="color:#e76100;font-weight:600;font-size:13px">03</span><span style="font-size:13.5px;font-weight:300;color:#1f2734">PDF to your inbox, plus an optional 20-minute walkthrough</span></div>
+</div>
+<a href="https://tesseract.adlift.com/demo" target="_blank" rel="noopener" style="display:block;margin-top:16px;border:1.5px solid #1f2734;border-radius:9px;padding:15px;text-align:center;font-size:14.5px;font-weight:500;cursor:pointer;color:#1f2734;text-decoration:none" style-hover="background:#1f2734;color:#fff">Book the 20-minute walkthrough</a>
+<div onClick="{{ reset }}" style="text-align:center;font-size:12px;color:rgba(31,39,52,.5);margin-top:14px;cursor:pointer;font-weight:300">Run another domain</div>
+</div>
+</sc-if>
+
+</div>
+<div data-r="stats" style="margin-top: 22px; padding: 22px 26px; border: 1px solid rgba(255,255,255,.14); border-radius: 16px; background: rgba(255,255,255,.05); display: flex; flex-wrap: wrap; gap: 26px 40px; width: 559px; height: 94px">
+
+<div><div style="font-size:30px;font-weight:600;letter-spacing:-1px">200+</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;margin-top:2px">Brands already tracking AI&nbsp;<br>visibility on Tesseract</div></div><div><div style="font-size:30px;font-weight:600;letter-spacing:-1px">50m+</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;margin-top:2px">AI search <br>queries analysed</div></div>
+<div><div style="font-size:30px;font-weight:600;letter-spacing:-1px">{{ turnaround }}h</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;margin-top:2px">AI platform monitored,<br>plus AI overview and AI Mode</div></div>
+</div></div>
+
+</div></div>
+
+<div id="proof" data-r="pad" style="border-bottom:1px solid rgba(31,39,52,.1);padding:26px 40px;background:linear-gradient(#fff,#fbfaf8)">
+<div data-r="proofrow" style="max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:36px">
+<div style="flex:0 0 auto;font-size:11px;letter-spacing:1.4px;font-weight:500;color:rgba(31,39,52,.45)">TRUSTED BY</div>
+<div data-r="logos" style="flex:1;display:flex;gap:14px;align-items:center">
+<sc-for list="{{ clients }}" as="c" hint-placeholder-count="6">
+<div style="flex:1;height:34px;border-radius:6px;background:repeating-linear-gradient(45deg,rgba(31,39,52,.05) 0 5px,transparent 5px 10px);display:flex;align-items:center;justify-content:center;font-size:11px;font-family:ui-monospace,Menlo,monospace;color:rgba(31,39,52,.45)">{{ c }}</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div id="covers" data-r="pad" style="padding:82px 40px;background:linear-gradient(180deg,#fbf8f5,#f6f4f1);position:relative;overflow:hidden">
+<div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(31,39,52,.14) 1.2px,transparent 1.2px);background-size:26px 26px;opacity:.35"></div>
+<div style="position:absolute;top:-160px;right:-120px;width:440px;height:440px;border-radius:50%;border:1.5px solid rgba(231,97,0,.16);pointer-events:none"></div>
+<div style="position:absolute;top:-90px;right:-40px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(249,196,61,.22),transparent 70%);filter:blur(14px);pointer-events:none"></div>
+<div style="position:relative;z-index:1;max-width:1180px;margin:0 auto">
+<div style="max-width:620px">
+<div style="font-size:11.5px;letter-spacing:1.6px;font-weight:500;color:#e76100">WHAT THE AUDIT COVERS</div>
+<h2 style="font-size:38px;line-height:1.15;font-weight:600;letter-spacing:-1.4px;margin:14px 0 0;color:#1f2734">Four checks. One report</h2>
+</div>
+
+<div data-r="grid5" style="margin-top:40px">
+<sc-for list="{{ covers }}" as="c" hint-placeholder-count="5">
+<div onMouseEnter="{{ c.open_ }}" onClick="{{ c.toggle }}" style="position:relative;overflow:hidden;border-radius:16px;padding:26px;cursor:pointer;border:1px solid rgba(31,39,52,.09);box-shadow:0 1px 2px rgba(31,39,52,.04),0 12px 28px -18px rgba(31,39,52,.28);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease,background .25s ease;background:{{ c.bg }};color:{{ c.fg }}" style-hover="transform:translateY(-4px);border-color:rgba(231,97,0,.45);box-shadow:0 2px 4px rgba(31,39,52,.05),0 26px 44px -22px rgba(31,39,52,.35)">
+<div style="position:absolute;top:0;left:0;right:0;height:3px;background:{{ c.rail }}"></div>
+<div style="position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;border:1.5px solid {{ c.ring }};pointer-events:none"></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+<div style="width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:600;letter-spacing:.5px;background:{{ c.badgeBg }};color:{{ c.badgeFg }}">{{ c.no }}</div>
+<div style="width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;border:1px solid {{ c.ring }};color:{{ c.chev }}">{{ c.icon }}</div>
+</div>
+<div style="position:relative;font-size:17.5px;font-weight:600;letter-spacing:-.4px;margin:14px 0 9px;line-height:1.3">{{ c.title }}</div>
+<div style="position:relative;font-size:13.5px;line-height:1.6;font-weight:300;color:{{ c.bodyColor }}">{{ c.body }}</div>
+<sc-if value="{{ c.open }}" hint-placeholder-val="{{ false }}">
+<div style="position:relative;margin-top:16px;padding:12px 14px;border-radius:10px;background:rgba(231,97,0,.14);border:1px solid rgba(231,97,0,.45);font-size:12.5px;font-weight:500;color:#f9c43d;animation:fadeUp .28s ease both">{{ c.out }}</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div data-r="pad" style="padding:82px 40px;background:#fff;position:relative;overflow:hidden">
+<div style="position:absolute;left:-200px;bottom:-260px;width:560px;height:560px;border-radius:50%;border:1.5px solid rgba(31,39,52,.07);pointer-events:none"></div>
+<div style="position:absolute;left:-120px;bottom:-200px;width:420px;height:420px;border-radius:50%;border:1.5px solid rgba(231,97,0,.14);pointer-events:none"></div>
+<div style="position:relative;z-index:1;max-width:1180px;margin:0 auto">
+<h2 style="font-size:32px;font-weight:600;letter-spacing:-1.1px;color:#1f2734;margin:0 0 34px">In the news</h2>
+<div data-r="grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+<a href="#" target="_blank" rel="noopener" style="position:relative;overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(31,39,52,.1);border-radius:16px;background:#fff;box-shadow:0 1px 2px rgba(31,39,52,.04),0 14px 30px -20px rgba(31,39,52,.26);text-decoration:none;color:#1f2734;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:rgba(231,97,0,.4);box-shadow:0 2px 4px rgba(31,39,52,.05),0 28px 46px -24px rgba(31,39,52,.34)">
+<div style="position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(249,196,61,.16),transparent 70%);pointer-events:none"></div>
+<div style="position:relative;display:flex;align-items:center;justify-content:center;padding:24px 22px;border-bottom:1px solid rgba(31,39,52,.08);background:linear-gradient(#fbfaf8,#fff)">
+<img src="assets/martechseries.png" alt="MarTech Series" style="height:26px;width:auto;max-width:170px;object-fit:contain;border-radius:0">
+</div>
+<div style="position:relative;padding:26px 24px 22px;flex:1;display:flex;flex-direction:column;align-items:center;text-align:center">
+<div style="font-family:Georgia,serif;font-size:46px;line-height:.7;color:rgba(231,97,0,.32)">“</div>
+<div style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.65;font-weight:400;color:#1f2734;margin-top:14px;flex:1;text-align:center;text-wrap:pretty">"World’s first AI-powered brand visibility platform for the LLM era"</div>
+<div style="width:34px;height:1px;background:rgba(31,39,52,.18);margin-top:18px"></div>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;font-size:12.5px;font-weight:500;color:#e76100">Read the article<span>→</span></div>
+</div>
+</a>
+<a href="https://finance.yahoo.com/sectors/technology/articles/adlifts-tesseract-launches-claude-ai-140000383.html" target="_blank" rel="noopener" style="position:relative;overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(31,39,52,.1);border-radius:16px;background:#fff;box-shadow:0 1px 2px rgba(31,39,52,.04),0 14px 30px -20px rgba(31,39,52,.26);text-decoration:none;color:#1f2734;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:rgba(231,97,0,.4);box-shadow:0 2px 4px rgba(31,39,52,.05),0 28px 46px -24px rgba(31,39,52,.34)">
+<div style="position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(249,196,61,.16),transparent 70%);pointer-events:none"></div>
+<div style="position:relative;display:flex;align-items:center;justify-content:center;padding:24px 22px;border-bottom:1px solid rgba(31,39,52,.08);background:linear-gradient(#fbfaf8,#fff)">
+<img src="assets/yahoo-finance.png" alt="Yahoo Finance" style="height:24px;width:auto;max-width:170px;object-fit:contain;border-radius:0">
+</div>
+<div style="position:relative;padding:26px 24px 22px;flex:1;display:flex;flex-direction:column;align-items:center;text-align:center">
+<div style="font-family:Georgia,serif;font-size:46px;line-height:.7;color:rgba(231,97,0,.32)">“</div>
+<div style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.65;font-weight:400;color:#1f2734;margin-top:14px;flex:1;text-align:center;text-wrap:pretty">Adlift inc. launches new tool Tesseract"</div>
+<div style="width:34px;height:1px;background:rgba(31,39,52,.18);margin-top:18px"></div>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;font-size:12.5px;font-weight:500;color:#e76100">Read the article<span>→</span></div>
+</div>
+</a>
+<a href="https://investorshangout.com/revolutionizing-brand-visibility-with-tesseracts-launch-by-adlift-297958-/" target="_blank" rel="noopener" style="position:relative;overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(31,39,52,.1);border-radius:16px;background:#fff;box-shadow:0 1px 2px rgba(31,39,52,.04),0 14px 30px -20px rgba(31,39,52,.26);text-decoration:none;color:#1f2734;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:rgba(231,97,0,.4);box-shadow:0 2px 4px rgba(31,39,52,.05),0 28px 46px -24px rgba(31,39,52,.34)">
+<div style="position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(249,196,61,.16),transparent 70%);pointer-events:none"></div>
+<div style="position:relative;display:flex;align-items:center;justify-content:center;padding:24px 22px;border-bottom:1px solid rgba(31,39,52,.08);background:linear-gradient(#fbfaf8,#fff)">
+<img src="assets/investors-hangout.png" alt="Investors Hangout" style="height:76px;width:auto;max-width:170px;object-fit:contain;border-radius:8px">
+</div>
+<div style="position:relative;padding:26px 24px 22px;flex:1;display:flex;flex-direction:column;align-items:center;text-align:center">
+<div style="font-family:Georgia,serif;font-size:46px;line-height:.7;color:rgba(231,97,0,.32)">“</div>
+<div style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.65;font-weight:400;color:#1f2734;margin-top:14px;flex:1;text-align:center;text-wrap:pretty">"Revolutionizing brand visibility with tesseract’s launch"</div>
+<div style="width:34px;height:1px;background:rgba(31,39,52,.18);margin-top:18px"></div>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;font-size:12.5px;font-weight:500;color:#e76100">Read the article<span>→</span></div>
+</div>
+</a>
+</div>
+</div>
+</div>
+
+<div data-r="pad" style="background:#1f2734;background-image:radial-gradient(900px 340px at 92% 120%,rgba(231,97,0,.32),transparent 62%);color:#fff;padding:70px 40px;position:relative;overflow:hidden">
+<div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.16) 1.2px,transparent 1.2px);background-size:22px 22px;opacity:.4"></div>
+<div style="position:absolute;top:-150px;left:12%;width:360px;height:360px;border-radius:50%;border:1.5px solid rgba(255,255,255,.08);pointer-events:none"></div>
+<div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap">
+<div>
+<h2 style="font-size: 32px; font-weight: 600; letter-spacing: -1.2px; margin: 0; line-height: 1.2">Your competitors are already showing up in these answers</h2>
+<p style="font-size:15px;color:rgba(255,255,255,.65);font-weight:300;margin:10px 0 0">Free. Two business days. No obligation.</p>
+</div>
+<a href="#top" style="background:#e76100;color:#fff;border-radius:10px;padding:17px 30px;font-size:15.5px;font-weight:500;white-space:nowrap" style-hover="background:#f9c43d;color:#1f2734">Get my audit →</a>
+</div>
+<div style="position:relative;z-index:1;max-width:1180px;margin:44px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.45);font-weight:300;flex-wrap:wrap;gap:12px">
+<span>© 2026 AdLift. All rights reserved.</span>
+<span>Acquire. Amplify. Advance.</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;turnaround&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:48,&quot;min&quot;:12,&quot;max&quot;:96,&quot;step&quot;:12,&quot;unit&quot;:&quot;h&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Offer&quot;}}">
+class Component extends DCLogic {
+  state = { phase: 'idle', domain: '', pct: 0, tick: 0, openCover: 0 };
+
+  componentWillUnmount() { clearInterval(this._t); }
+
+  startScan = () => {
+    const d = (this.state.domain || '').trim();
+    this.setState({ phase: 'score', domain: d });
+  };
+
+  renderVals() {
+    const { phase, domain, openCover } = this.state;
+
+    const coverData = [
+      { no: '01', title: 'Brand share of voice \n', body: "How often AI answers name you versus your competitors across category prompts, and which sources they pull from to do it", out: ' → Your visibility score, benchmarked ' },
+      { no: '02', title: 'AI Overview and AI Mode presence \n', body: 'Where your brand appears in AI Overviews and AI Mode on Google across your key markets, and where it\'s missing. \n', out: '→ A map of every answer you should own ' },
+      { no: '03', title: 'Sentiment analysis \n', body: 'Being named isn\'t the same as being recommended. We track whether each platform describes your brand positively or negatively, and where the negative framing comes from. \n', out: '→ How AI talks about you ' },
+      { no: '04', title: 'Competitor view', body: 'Who dominates AI answers in your category, and how they\'re structured to get there.  ', out: '→ Side by side share of visibility' },
+      { no: '05', title: '90-day roadmap', body: "What to fix first, what can wait, and why. Planned across three months.", out: '→  Your first quarter of work, in order ' }
+    ];
+    const covers = coverData.map((c, i) => {
+      const open = openCover === i;
+      return Object.assign({}, c, {
+        open,
+        icon: open ? '−' : '+',
+        bg: open ? '#1f2734' : '#fff',
+        fg: open ? '#fff' : '#1f2734',
+        bodyColor: open ? 'rgba(255,255,255,.72)' : 'rgba(31,39,52,.65)',
+        rail: open ? '#e76100' : 'rgba(231,97,0,.28)',
+        ring: open ? 'rgba(255,255,255,.14)' : 'rgba(31,39,52,.08)',
+        badgeBg: open ? '#e76100' : '#fff3e9',
+        badgeFg: open ? '#fff' : '#e76100',
+        chev: open ? 'rgba(255,255,255,.75)' : 'rgba(31,39,52,.45)',
+        open_: () => this.setState({ openCover: i }),
+        toggle: () => this.setState(st => ({ openCover: st.openCover === i ? -1 : i }))
+      });
+    });
+    const turnaround = this.props.turnaround ?? 48;
+    return {
+      domainValue: domain,
+      domain: domain || 'yourbrand.com',
+      turnLabel: turnaround + '-hour',
+      covers,
+      clients: ['Walmart', 'Shopify', 'PayPal', 'Peloton', 'Livspace', 'Bausch + Lomb'],
+      turnaround,
+      isIdle: phase === 'idle',
+      isScanning: phase === 'scanning',
+      isScore: phase === 'score',
+      isDone: phase === 'done',
+      onDomain: e => this.setState({ domain: e.target.value }),
+      startScan: this.startScan,
+      submit: () => this.setState({ phase: 'done' }),
+      back: () => this.setState({ phase: 'idle' }),
+      reset: () => this.setState({ phase: 'idle', domain: '' })
+    };
+  }
+}
+</script>
+</body>
+</html>
