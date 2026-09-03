@@ -1,0 +1,14 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# Dependencies / build output (none currently — static site)
+node_modules/
+.vercel/
+
+# Claude Design canvas artifacts
+.thumbnail
