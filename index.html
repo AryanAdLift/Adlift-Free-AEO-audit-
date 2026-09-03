@@ -22,7 +22,8 @@ input{font-family:Poppins,system-ui,sans-serif}
 @media (max-width:680px){[data-r="grid5"]{grid-template-columns:1fr}[data-r="grid5"]>*,[data-r="grid5"]>*:nth-child(4){grid-column:span 1}}
 @media (max-width:860px){[data-r="nav"] a{display:none!important}}
 @media (max-width:1000px){
-[data-r="hero"]{grid-template-columns:1fr!important;gap:36px!important}
+[data-r="hero"]{grid-template-columns:minmax(0,1fr)!important;gap:36px!important}
+[data-r="hero"]>div{min-width:0!important}
 [data-r="stats"]{position:static!important;left:auto!important;top:auto!important;width:auto!important}
 [data-r="grid3"]{grid-template-columns:1fr 1fr!important}
 [data-r="h1"]{font-size:44px!important;letter-spacing:-1.4px!important}
@@ -83,7 +84,7 @@ input{font-family:Poppins,system-ui,sans-serif}
 <div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color:#f9c43d;font-size:15px">✓</span>Your AI visibility score</div>
 <div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>Who AI cites instead of you</div>
 <div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>How models describe your brand&nbsp;</div><div style="display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(255,255,255,.16);border-radius:8px;font-size:13.5px;font-weight:400;background:rgba(255,255,255,.04)"><span style="color: rgb(249, 196, 61); font-size: 15px;">✓</span>Your priority fixes&nbsp;</div>
-</div></div><div style="display:flex;flex-direction:column;height:100%"><div style="flex:1;display:flex;align-items:center"><div style="position: relative; background: #fff; border-radius: 18px; padding: 32px; box-shadow: 0 40px 90px -28px rgba(0,0,0,.62),0 0 0 1px rgba(255,255,255,.08); color: #1f2734; width: 553px; min-height: 440px">
+</div></div><div style="display:flex;flex-direction:column;height:100%"><div style="flex:1;display:flex;align-items:center"><div style="position: relative; background: #fff; border-radius: 18px; padding: 32px; box-shadow: 0 40px 90px -28px rgba(0,0,0,.62),0 0 0 1px rgba(255,255,255,.08); color: #1f2734; width: 100%; max-width: 553px; min-height: 440px">
 
 
 <sc-if value="{{ isIdle }}" hint-placeholder-val="{{ true }}">
@@ -142,7 +143,7 @@ input{font-family:Poppins,system-ui,sans-serif}
 </sc-if>
 
 </div></div>
-<div data-r="stats" style="margin-top: 22px; padding: 22px 26px; border: 1px solid rgba(255,255,255,.14); border-radius: 16px; background: rgba(255,255,255,.05); display: flex; flex-wrap: wrap; gap: 26px 40px; width: 559px; height: 94px">
+<div data-r="stats" style="margin-top: 22px; padding: 22px 26px; border: 1px solid rgba(255,255,255,.14); border-radius: 16px; background: rgba(255,255,255,.05); display: flex; flex-wrap: wrap; gap: 26px 40px; width: 100%; max-width: 559px">
 
 <div><div style="font-size:30px;font-weight:600;letter-spacing:-1px">200+</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;margin-top:2px">Brands already tracking AI&nbsp;<br>visibility on Tesseract</div></div><div><div style="font-size:30px;font-weight:600;letter-spacing:-1px">50m+</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;margin-top:2px">AI search <br>queries analysed</div></div>
 <div><div style="font-size:30px;font-weight:600;letter-spacing:-1px">{{ turnaround }}h</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);font-weight:300;margin-top:2px">AI platform monitored,<br>plus AI overview and AI Mode</div></div>
