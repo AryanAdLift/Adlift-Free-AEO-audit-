@@ -207,6 +207,8 @@ input,button{font-family:inherit}
 
 /* Confirmation screen (single line, centered) */
 .form-step--center{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:376px}
+.confirm-panel{width:100%;background:linear-gradient(180deg,#fff8f2,#fff3e9);border:1px solid rgba(231,97,0,.22);border-radius:16px;padding:38px 30px;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 14px 34px -22px rgba(231,97,0,.45)}
+.confirm-panel .success__check{background:var(--orange);color:#fff}
 .success__line{font-size:21px;line-height:1.5;font-weight:500;color:var(--navy);letter-spacing:-.3px;max-width:30ch;margin-top:20px}
 
 /* Step 3 — success */
@@ -480,8 +482,9 @@ input,button{font-family:inherit}
                 <input class="input input--sm" name="name" placeholder="Name" autocomplete="name" required>
                 <input class="input input--sm" name="phone" type="tel" placeholder="Phone Number" autocomplete="tel">
                 <input class="input input--sm" name="company" placeholder="Company Name" autocomplete="organization">
-                <input class="input input--sm" name="email" type="email" placeholder="Official Email Id" autocomplete="email" required>
-                <input class="input input--sm field-full" name="website" type="text" inputmode="url" placeholder="yourbrand.com" autocomplete="url" required>
+                <input class="input input--sm" name="designation" placeholder="Designation" autocomplete="organization-title">
+                <input class="input input--sm" name="email" type="email" placeholder="Email" autocomplete="email" required>
+                <input class="input input--sm" name="website" type="text" inputmode="url" placeholder="Website" autocomplete="url" required>
               </div>
               <button class="btn-primary" type="submit">Submit</button>
             </form>
@@ -493,8 +496,10 @@ input,button{font-family:inherit}
 
           <!-- Confirmation -->
           <div class="form-step form-step--center" id="step-done" hidden>
-            <div class="success__check">&#10003;</div>
-            <p class="success__line">Somewhere, an AI is describing your brand. We're about to find out how kindly.</p>
+            <div class="confirm-panel">
+              <div class="success__check">&#10003;</div>
+              <p class="success__line">Somewhere, an AI is describing your brand. We're about to find out how kindly.</p>
+            </div>
           </div>
 
         </div>
@@ -502,9 +507,9 @@ input,button{font-family:inherit}
 
       <!-- 4. STATS BAR -->
       <div class="stats">
-        <div><div class="stat__num">200+</div><div class="stat__label">Brands already tracking AI<br>visibility on Tesseract</div></div>
+        <div><div class="stat__num">500+</div><div class="stat__label">Brands already tracking AI<br>visibility on Tesseract</div></div>
         <div><div class="stat__num">50m+</div><div class="stat__label">AI search<br>queries analyzed</div></div>
-        <div><div class="stat__num">48h</div><div class="stat__label">AI platform monitored,<br>plus AI overview and AI Mode</div></div>
+        <div><div class="stat__num">6</div><div class="stat__label">AI platforms monitored, plus<br>AI Overviews and AI Mode</div></div>
       </div>
     </div>
 
@@ -692,11 +697,12 @@ input,button{font-family:inherit}
 
     var f = auditForm.elements;
     var payload = {
-      name:    f["name"].value.trim(),
-      phone:   f["phone"].value.trim(),
-      company: f["company"].value.trim(),
-      email:   f["email"].value.trim(),
-      website: f["website"].value.trim()
+      name:        f["name"].value.trim(),
+      phone:       f["phone"].value.trim(),
+      company:     f["company"].value.trim(),
+      designation: f["designation"].value.trim(),
+      email:       f["email"].value.trim(),
+      website:     f["website"].value.trim()
     };
 
     // TODO (backend): send `payload` to your CRM / form endpoint here, e.g.
